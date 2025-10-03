@@ -1,0 +1,165 @@
+
+/*ELEMENTOS UNIVERSAIS */
+
+/*Importa a fonte Raleway do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap'); 
+
+* { /*Seleciona todos os elementos da página*/
+    font-family: 'Raleway', sans-serif; /*Define a fonte padrão da página como Raleway, com fallback para sans-serif*/
+    box-sizing: border-box; /*Define o modelo de caixa para incluir padding e border na largura e altura dos elementos*/
+    margin: 0; /*Remove a margem padrão dos elementos*/
+}
+
+body {
+    background-color: #000000;   /*Define a cor de fundo da página*/
+}
+
+p {
+    color: rgb(255, 255, 255); /*Define a cor do texto dos paragrafos*/
+    font-weight: bolder; /*Define o peso da fonte como negrito*/
+}
+
+h2 { /*Editor dos títulos h2*/
+    font-size: 2rem; /*Define o tamanho da fonte dos títulos h2*/
+    color: #33A8DB; /*Define a cor do texto dos títulos h2*/
+    font-weight: bold; /*Define o peso da fonte como negrito*/
+    letter-spacing: 4px; /*Adiciona um espaçamento entre as letras dos títulos h2*/
+    text-transform: uppercase; /*Transforma o texto dos títulos h2 em maiúsculas*/
+    margin-bottom: 24px; /*Adiciona uma margem na parte inferior dos títulos h2*/
+}
+
+section { /*Editor das seções independente da ID*/
+    margin: 40px auto; /*Adiciona uma margem de 50px no topo e na base e centraliza o elemento horizontalmente*/
+}
+
+/*<HEADER> */
+
+.banner { /*Editor do banner*/
+    /*Adiciona um gradiente sobre a imagem de fundo para focar no texto central*/
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0,0,225, .3), rgba(0, 0, 0, .3)), 
+    url('../images/banner.png'); /*Define a imagem de fundo do banner*/
+    background-size: cover;    /*Define o tamanho da imagem de fundo para cobrir todo o elemento*/
+    background-repeat: round;  /*Define a repetição da imagem*/
+    height: 500px; /*Define a altura da área do banner*/
+    padding-top: 50px; /*Adiciona um espaçamento interno no topo do banner*/
+    border-bottom: 3px solid #3933dbab; /*Adiciona uma borda na parte inferior do banner*/
+}
+
+.banner .banner-content { /*Seleciona o elemento interno que está dentro do elemento com a classe banner*/
+    width: 600px; /*Define a largura do conteúdo do banner*/
+    margin: auto; /*Centraliza o conteúdo do banner horizontalmente*/
+    text-align: center; /*Centraliza o texto do conteúdo do banner*/
+}
+
+.banner p { /*Editor do parágrafo do banner*/
+    font-size: 1.25rem; /*Define o tamanho da fonte do parágrafo*/
+    margin: 16px 0 16px; /*Adiciona uma margem ao redor do parágrafo*/
+}
+
+.button { /*Editor do botão*/
+    display: inline-block; /*Define o botão como um elemento inline-block para permitir a aplicação de padding e margin*/
+    background: #9babcd74; /*Define a cor de fundo do botão*/
+    padding: .75rem 1.5rem; /*Adiciona um espaçamento interno no botão*/
+    margin: 20px; /*Adiciona uma margem ao redor do botão*/
+    border-radius: 50px; /*Adiciona bordas arredondadas ao botão*/
+    text-decoration: none; /*Remove o sublinhado do texto do botão*/
+    font-family: sans-serif; /*Define a fonte do botão como sans-serif*/
+    border: 1px solid #33A8DB; /*Adiciona uma borda azul ao redor do botão*/
+    box-shadow: inset -5px 6px 8px rgba(60, 45, 125, 0.784); /*Adiciona uma sombra interna no botão*/
+}
+
+a { /*Editor da âncora/link do botão*/
+    color: #33A8DB; /*Define a cor do link*/
+    text-decoration: none; /*Remove o sublinhado do link*/  
+    font-weight: bold; /*Define o peso da fonte como negrito*/
+    font-size: larger; /*Define o tamanho da fonte como maior que o padrão*/
+    
+}
+
+.banner h1 { /*Editor do título do banner*/
+    font-size: 2.7rem; /*Define o tamanho da fonte do título*/
+    font-weight: 900; /*Define o peso da fonte do título como 900 (+negrito)*/
+    text-transform: uppercase; /*Transforma o texto do título em maiúsculas*/
+    color: transparent; /*Define a cor do texto do título como transparente para o gradiente*/
+    background: -webkit-linear-gradient(#33A8DB, #1472B7); /*Adiciona um gradiente ao texto do título*/   
+    background-clip: text; /*Adiciona o gradiente acima apenas no texto*/
+    -webkit-background-clip: text; /*Adiciona WebKit para o gradiente*/
+}
+
+/*</HEADER> */
+
+/*<MAIN> */
+
+#course-content { /*Editor da seção com ID course-content*/
+    width: 800px; /*Define a largura da seção*/
+    text-align: center; /*Centraliza o texto da seção*/
+}
+
+#course-content .modules-list { /*Seleciona o elemento com a classe modules-list que está dentro do elemento com a ID course-content*/
+    margin: 24px 0; /*Adiciona uma margem na parte superior e inferior da lista de módulos*/
+}
+
+#course-content .modules-list .module { /*Editor dos elementos dos módulos*/
+    color: white; /*Define a cor do texto dentro dos elementos*/
+    width: 530px; /*Define a largura dos elementos*/
+    margin: 12px auto; /*Adiciona uma margem na parte superior e inferior e centraliza os elementos horizontalmente*/
+    border: 1px solid #33A8DB; /*Adiciona uma borda azul ao redor dos elementos*/
+    background-color: #252525; /*Define a cor de fundo dos elementos*/
+    padding: 16px; /*Adiciona um espaçamento interno nos elementos*/
+    border-radius: 50px; /*Adiciona bordas arredondadas aos elementos*/
+    box-shadow: inset -5px 6px 8px rgba(60, 45, 125, 0.784); /*Adiciona uma sombra interna aos elementos*/
+}
+
+#course-content .modules-list .module span { /*Editor do span dentro dos elementos dos módulos*/
+    color: #33A8DB; /*Define a cor do texto do span*/
+    font-weight: bold; /*Define o peso da fonte do span como negrito*/
+}
+
+#transform-world { /*Editor da seção com ID transform-world*/
+    height: 560px; /*Define a altura da seção*/
+    background-size: cover; /*Define o tamanho da imagem de fundo para cobrir todo o elemento*/
+    background-image: url("../images/woman-code.png"); /*Define a imagem de fundo da seção*/
+    background-attachment: fixed; /*Define a imagem de fundo como fixa*/
+    border-top: 3px solid #3933dbab; /*Adiciona uma borda na parte superior da seção*/
+    border-bottom: 3px solid #3933dbab; /*Adiciona uma borda na parte inferior da seção*/
+    padding: 200px; /*Adiciona um espaçamento interno na seção*/
+}
+
+#transform-world p { /*Editor do parágrafo com "transforme o mundo com a gente"*/
+    font-weight: 900; /*Define o peso da fonte como 900 (+negrito)*/
+    font-size: 2.5rem; /*Define o tamanho da fonte do parágrafo*/
+    max-width: 250px; /*Define a largura máxima do parágrafo*/
+    text-shadow: 3px 2px #33A8DB; /*Adiciona uma sombra ao texto do parágrafo*/
+}
+
+#professional-challenges { /*Editor da seção com ID professional-challenges*/
+    text-align: center; /*Centraliza o texto da seção*/
+    width: 800px; /*Define a largura da seção*/
+}
+
+#professional-challenges img { /*Editor da imagem*/
+    margin: 32px 0; /*Adiciona uma margem na parte superior e inferior da imagem*/
+}
+
+/*</MAIN> */
+
+/*<FOOTER> */
+
+footer { /*Editor do rodapé*/
+    padding: 60px 0; /*Adiciona um espaçamento interno na parte superior e inferior do rodapé*/
+    text-align: center; /*Centraliza o texto do rodapé*/
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)); /*Adiciona um gradiente ao fundo do rodapé*/
+    border-top: 3px solid #3933dbab; /*Adiciona uma borda na parte superior do rodapé*/
+}
+
+footer .dio-logo { /*Editor da logo da DIO no rodapé*/
+    width: 300px; /*Define a largura da logo*/
+}
+
+footer a { /*Editor do link no rodapé*/
+    color: #33A8DB; /*Define a cor do link*/
+    font-weight: bold; /*Define o peso da fonte como negrito*/
+    text-decoration: none; /*Remove o sublinhado do link*/
+}
+
+/*</FOOTER> */
